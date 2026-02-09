@@ -1,6 +1,6 @@
 # Local Translator
 
-**Privacy-first translation app for macOS** — powered by local Ollama models and cloud AI providers.
+**Privacy-first translation app for macOS** — powered by local AI engines (Ollama & LM Studio) and cloud providers.
 
 ## Download
 
@@ -12,7 +12,8 @@ Look for `LocalTranslator-x.x.x-universal.dmg` in the latest release assets.
 
 ## Features
 
-- **Privacy-first**: Run translations entirely on your Mac with local Ollama models — no data leaves your device.
+- **Privacy-first**: Run translations entirely on your Mac with local Ollama or LM Studio models — no data leaves your device.
+- **Dual local engines**: Full support for both [Ollama](https://ollama.ai) and [LM Studio](https://lmstudio.ai) with automatic CLI installation, model management, and headless server control.
 - **Multi-provider**: OpenAI, Anthropic, Gemini, xAI, and OpenRouter support built-in.
 - **Global shortcuts**: Translate from any app with customizable keyboard shortcuts.
 - **QuickBar**: Spotlight-style floating translation bar for instant access.
@@ -27,7 +28,7 @@ Look for `LocalTranslator-x.x.x-universal.dmg` in the latest release assets.
 
 - macOS 14.0 (Sonoma) or later
 - Apple Silicon or Intel Mac (universal binary)
-- For local translation: [Ollama](https://ollama.ai) installed
+- For local translation: [Ollama](https://ollama.ai) and/or [LM Studio](https://lmstudio.ai) installed
 
 ## Installation
 
