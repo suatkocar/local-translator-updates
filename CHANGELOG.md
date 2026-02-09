@@ -1,7 +1,8 @@
 # Changelog
 
 ## 1.0.0
-- Privacy-first translation with local Ollama and cloud providers (OpenAI, Anthropic, Gemini, xAI, OpenRouter).
+- Privacy-first translation with local Ollama, LM Studio, and cloud providers (OpenAI, Anthropic, Gemini, xAI, OpenRouter).
+- Local AI support: Ollama and LM Studio with automatic CLI installation, model management, and headless server control.
 - Global shortcuts, QuickBar, and menu bar workflow for instant translations anywhere.
 - Multiple translation modes: dialog, paste directly, or clipboard-only.
 - Screen-to-Translate OCR for selected screen regions.
