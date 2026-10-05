@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased — Local Acceptance
+
+- Add current, searchable text-model catalogs with explicit provider refresh, offline suggestions, preserved saved IDs, and manual model/deployment entry.
+- Add DeepSeek direct, Azure text, and multiple named OpenAI-compatible connections with independent translation/search/comparison assignments and Keychain credentials.
+- Update native request policies, OpenAI search routing, Perplexity Agent presets/citations, OpenRouter supported parameters, and compatible Gemini 3.8 TTS.
+- Add a per-model Reasoning setting that lists only the levels each model documents and shows the exact request fields it sends; QuickBar's Thinking button now raises reasoning for chat only on every supported model.
+- Test a custom model ID with one short request before saving it, show the provider's error when it fails, and allow saved custom IDs to be removed. Custom IDs no longer disappear when the API key or sampling settings change.
+- Show DeepSeek's API aliases with their model generation (`deepseek-flash` is DeepSeek V4.1 Flash).
+- Reject incomplete/error Chat Completions and Responses streams instead of treating partial output as a completed answer; keep reasoning out of displayed translations and retain citation source numbers.
+- Add Azure Live Translation with lightweight A/B captions and a resizable C meeting workspace, independent original/translation lanes, paused scroll following, local SQLite history, and complete copy/export.
+- Keep text-provider settings separate from Live Translation; no automatic recording, deployment, model-list inference probes, or billing eligibility promises.
+
 ## 1.0.0
 Initial release.
 
