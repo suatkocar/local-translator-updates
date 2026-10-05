@@ -8,6 +8,8 @@
 - Add a per-model Reasoning setting that lists only the levels each model documents and shows the exact request fields it sends; QuickBar's Thinking button now raises reasoning for chat only on every supported model.
 - Test a custom model ID with one short request before saving it, show the provider's error when it fails, and allow saved custom IDs to be removed. Custom IDs no longer disappear when the API key or sampling settings change.
 - Show DeepSeek's API aliases with their model generation (`deepseek-flash` is DeepSeek V4.1 Flash).
+- Add Inception (Mercury) as a direct provider: Mercury 2.5 and Mercury 2 come from Inception's model list, translations use the documented `instant` reasoning level, and Reasoning also offers Low, Medium and High.
+- Match the translation dialog's model selector to the provider chip beside it, and widen the Settings provider pickers so longer provider names are not cut off.
 - Add General → Startup → Open Settings at Launch (on by default). Onboarding and missing-permission screens still open at launch when needed.
 - Fix the menu bar's Settings… command (⌘,) opening an empty window instead of Settings, and the menu bar icon not closing its panel while Settings was open.
 - Reject incomplete/error Chat Completions and Responses streams instead of treating partial output as a completed answer; keep reasoning out of displayed translations and retain citation source numbers.
