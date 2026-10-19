@@ -7,14 +7,17 @@
 - Update native request policies, OpenAI search routing, Perplexity Agent presets/citations, OpenRouter supported parameters, and compatible Gemini 3.8 TTS.
 - Add a per-model Reasoning setting that lists only the levels each model documents and shows the exact request fields it sends; QuickBar's Thinking button now raises reasoning for chat only on every supported model.
 - Test a custom model ID with one short request before saving it, show the provider's error when it fails, and allow saved custom IDs to be removed. Custom IDs no longer disappear when the API key or sampling settings change.
-- Show DeepSeek's API aliases with their model generation (`deepseek-flash` is DeepSeek V4.1 Flash).
-- Add Inception (Mercury) as a direct provider: Mercury 2.5 and Mercury 2 come from Inception's model list, translations use the documented `instant` reasoning level, and Reasoning also offers Low, Medium and High.
+- Show DeepSeek's API aliases with their model generation (`deepseek-flash` is DeepSeek V4.1 Flash 1017).
+- Add Inception (Mercury) as a direct provider: Mercury 3 (recommended), Mercury 2.5 and Mercury 2 come from Inception's model list, translations use the documented `instant` reasoning level, and Reasoning also offers Low, Medium and High. Refreshing the list skips Mercury Decide, which serves only Inception's decisions endpoint.
 - Match the translation dialog's model selector to the provider chip beside it, and widen the Settings provider pickers so longer provider names are not cut off.
 - Add General → Startup → Open Settings at Launch (on by default). Onboarding and missing-permission screens still open at launch when needed.
 - Fix the menu bar's Settings… command (⌘,) opening an empty window instead of Settings, and the menu bar icon not closing its panel while Settings was open.
 - Reject incomplete/error Chat Completions and Responses streams instead of treating partial output as a completed answer; keep reasoning out of displayed translations and retain citation source numbers.
 - Add Azure Live Translation with lightweight A/B captions and a resizable C meeting workspace, independent original/translation lanes, paused scroll following, local SQLite history, and complete copy/export.
 - Keep text-provider settings separate from Live Translation; no automatic recording, deployment, model-list inference probes, or billing eligibility promises.
+- Redesign the Quick Bar like a native AI chat: the composer stays where it opened and the conversation or translation grows upward above it, follows new text until you scroll back, and offers Jump to latest. The mode, provider, model and Send controls move into the composer, and a dragged Quick Bar reopens where you left it.
+- Add Quick Bar dictation: hold the microphone next to Send (or ⌥ Space) to talk and release to stop, or click to start and click again. Words appear in the box as you speak; on release they are inserted (default) or sent, set in Workflow → Quick Bar Dictation. Uses Live Translation's Azure connection with MAI Transcribe 2, falling back to GPT Live and then a file transcription, with an optional English output through Mercury or DeepSeek. Audio stays in memory. A recording with nothing above the microphone's noise floor inserts nothing and says "No speech was recognized." (the services otherwise invent a filler word for silence).
+- Open the Quick Bar from other tools with `localtranslator://quickbar`.
 
 ## 1.0.0
 Initial release.
